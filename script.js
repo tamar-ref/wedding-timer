@@ -16,7 +16,7 @@ function startCountdown() {
         const diff = target - now;
 
         if (diff <= 0) {
-            document.getElementById("all").innerHTML = `<h1>!האירוע התחיל</h1>`;
+            document.getElementById("all").innerHTML = `<h1>!מזל טוב</h1>`;
             return;
         }
 

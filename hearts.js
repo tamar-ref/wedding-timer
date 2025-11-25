@@ -1,7 +1,13 @@
 const canvas = document.getElementById('heartsCanvas');
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = document.body.scrollHeight; 
+}
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
 
 const hearts = [];
 
